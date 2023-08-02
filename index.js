@@ -10,9 +10,9 @@ function addToDo() {
   var ul = document.getElementById("to-do-list");
   var li = document.createElement("li");
 
-  const span = document.createElement("span");
-  span.classList.add("float-right");
-  span.innerHTML = `<button id="trash-button-${counter}"><i class="fa-solid fa-trash-can"></i></button>`;
+  // const span = document.createElement("span");
+  // span.classList.add("float-right");
+  // span.innerHTML = `<button id="trash-button-${counter}"><i class="fa-solid fa-trash-can"></i></button>`;
 
   li.setAttribute("id", `id-${counter}`);
   li.appendChild(document.createTextNode(value));
