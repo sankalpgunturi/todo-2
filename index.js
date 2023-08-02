@@ -19,14 +19,6 @@ function addToDo() {
   li.appendChild(span);
   ul.appendChild(li);
 
-  removeListItem(`trash-button-${counter}`, `id-${counter}`);
   document.getElementById("input-field").value = "";
   counter++;
-}
-
-function removeListItem(buttonClassName, id) {
-  const deleteButton = document.querySelector(`#${buttonClassName}`);
-  deleteButton.addEventListener("click", () => {
-    document.getElementById(id).remove();
-  });
 }
